@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авто с пробегом</title>
+    <link rel="stylesheet" href="../css/auto-probeg.css">
+    <script src="../js/burger+catalog.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="parent-popup-div">
+            <div class="popup-callback">
+                <img src="/img/main-1920/popup-callback-close.png" alt="" class="popup-callback__close">
+                <div class="popup-callback__content">
+                   <div class="popup-callback__content-block">
+                    <p class="popup-callback__title">
+                        Обратный звонок
+                    </p>
+                    <input type="text" class="popup-callback__input" placeholder="Ваше имя">
+                    <input type="tel" class="popup-callback__input" placeholder="Ваш телефон">
+                    <button class="popup-callback__btn red-btn">перезвоните мне</button>
+                    <p class="popup-callback__desc">Нажимая кнопку “Получить предложение” Вы даете согласие на обработку своих персональных данных</p>
+                   </div>
+                </div>
+        </div>
+        </div>
+        <div class="header-top">
+            <div class="container cont__h-t">
+                <div class="header-top__item">
+                    <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.07143 0C8.94689 0 10.7455 0.745023 12.0717 2.07117C13.3978 3.39732 14.1429 5.19597 14.1429 7.07143C14.1429 9.999 11.9114 13.0664 7.54286 16.3429C7.40685 16.4449 7.24143 16.5 7.07143 16.5C6.90142 16.5 6.736 16.4449 6.6 16.3429C2.23143 13.0664 0 9.999 0 7.07143C0 5.19597 0.745023 3.39732 2.07117 2.07117C3.39732 0.745023 5.19597 0 7.07143 0V0ZM7.07143 1.57143C5.61274 1.57143 4.21379 2.15089 3.18234 3.18234C2.15089 4.21379 1.57143 5.61274 1.57143 7.07143C1.57143 9.20071 3.23557 11.6569 6.63771 14.3833L7.07143 14.7259L7.50514 14.3833C10.9073 11.6569 12.5714 9.20071 12.5714 7.07143C12.5714 5.61274 11.992 4.21379 10.9605 3.18234C9.92907 2.15089 8.53012 1.57143 7.07143 1.57143ZM7.07143 5.5C7.4882 5.5 7.8879 5.66556 8.1826 5.96026C8.4773 6.25496 8.64286 6.65466 8.64286 7.07143C8.64286 7.4882 8.4773 7.8879 8.1826 8.1826C7.8879 8.4773 7.4882 8.64286 7.07143 8.64286C6.65466 8.64286 6.25496 8.4773 5.96026 8.1826C5.66556 7.8879 5.5 7.4882 5.5 7.07143C5.5 6.65466 5.66556 6.25496 5.96026 5.96026C6.25496 5.66556 6.65466 5.5 7.07143 5.5V5.5Z"
+                            fill="#737373" />
+                    </svg>
+                    Россия, Москва, 38КМ МКАД, 6Бс1
+                </div>
+                <div class="header-top__item">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8 0C3.5888 0 0 3.5888 0 8C0 12.4112 3.5888 16 8 16C12.4112 16 16 12.4112 16 8C16 3.5888 12.4112 0 8 0ZM8 14.4C4.4712 14.4 1.6 11.5288 1.6 8C1.6 4.4712 4.4712 1.6 8 1.6C11.5288 1.6 14.4 4.4712 14.4 8C14.4 11.5288 11.5288 14.4 8 14.4Z"
+                            fill="#737373" />
+                        <path d="M8.79922 4H7.19922V8.8H11.9992V7.2H8.79922V4Z" fill="#737373" />
+                    </svg>
+                    Время работы: c 08:00 до 21:00
+                </div>
+                <div class="header-top__item">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.5043 4.62488C15.5125 -0.000152887 9.40435 -1.37516 4.6674 1.49986C0.0551144 4.37488 -1.44076 10.6249 1.55099 15.25L1.80031 15.625L0.803054 19.375L4.54275 18.375L4.91672 18.625C6.53725 19.5 8.28244 20 10.0276 20C11.8975 20 13.7673 19.5 15.3879 18.5C20.0002 15.5 21.3714 9.37492 18.5043 4.62488V4.62488ZM15.8865 14.25C15.3879 15 14.7646 15.5 13.892 15.625C13.3934 15.625 12.7701 15.875 10.2769 14.875C8.15779 13.875 6.4126 12.2499 5.16603 10.3749C4.41809 9.49992 4.04412 8.37491 3.91947 7.2499C3.91947 6.2499 4.29344 5.37489 4.91672 4.74988C5.16603 4.49988 5.41534 4.37488 5.66466 4.37488H6.28794C6.53725 4.37488 6.78657 4.37488 6.91122 4.87488C7.16053 5.49989 7.78382 6.9999 7.78382 7.1249C7.90847 7.2499 7.90847 7.49991 7.78382 7.62491C7.90847 7.87491 7.78382 8.12491 7.65916 8.24991C7.5345 8.37491 7.40985 8.62491 7.28519 8.74991C7.03588 8.87492 6.91122 9.12492 7.03588 9.37492C7.5345 10.1249 8.15779 10.8749 8.78107 11.4999C9.52901 12.1249 10.2769 12.6249 11.1495 12.9999C11.3989 13.1249 11.6482 13.1249 11.7728 12.8749C11.8975 12.6249 12.5208 11.9999 12.7701 11.7499C13.0194 11.4999 13.144 11.4999 13.3934 11.6249L15.3879 12.6249C15.6372 12.7499 15.8865 12.8749 16.0111 12.9999C16.1358 13.3749 16.1358 13.875 15.8865 14.25V14.25Z"
+                            fill="#737373" />
+                    </svg>
+                    <span class="header-whatsapp" style="text-decoration: underline;">
+                        Whatsapp
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-bottom__upper-side">
+                    <div class="header__burger"></div>
+                    <a href="../index.html">
+                        <img src="../img/main-1920/header-logo.png" alt="логотип" class="header__logo">
+                    </a>
+                    <img src="../img/main-1920/header-line.png" alt="" class="header__logo-line">
+                    <p class="upper-side__waitings">
+                        <span class="ten-years">10 лет</span> превосходим <br> ваши ожидания
+                    </p>
+                    <nav class="header-bottom__nav">
+                        <a href="#" class="header-bottom__nav-link">Подбор авто</a>
+                        <a href="o-kompanii.html" class="header-bottom__nav-link">О компании</a>
+                        <a href="tehcenter.html" class="header-bottom__nav-link">Техцентр</a>
+                        <a href="otzivi.html" class="header-bottom__nav-link">Отзывы</a>
+                        <a href="contacts.html" class="header-bottom__nav-link">Контакты</a>
+                    </nav>
+                    <div class="header-bottom__callback">
+                        <img src="../img/main-1920/header-callback.svg" style="margin-right: 12px;" alt="">
+                        <div class="callback__nums">
+                            <p class="callback-num-1">
+                                +7 (800) 551-94-31
+                            </p>
+                            <p class="callback-num-2">
+                                +7 (495) 292-18-67
+                            </p>
+                        </div>
+                        <button class="header-bottom__callback-btn">
+                            обратный звонок
+                        </button>
+                    </div>
+                </div>
+                <div class="header-bottom__list">
+                    <a href="#" class="header-bottom__list-link catalog-auto-h">
+                        каталог авто
+                    </a>
+                    <a href="#" class="header-bottom__list-link">авто с пробегом</a>
+                    <a href="#" class="header-bottom__list-link credit-h">кредит и рассрочка</a>
+                    <a href="#" class="header-bottom__list-link special-h">спецпредложения</a>
+                    <a href="#" class="header-bottom__list-link">такси в кредит</a>
+                    <div class="header-bottom__list-stats">
+                        <div class="list-stats__item">
+                            <img src="/img/main-1920/header-heart.svg" alt="">
+                        </div>
+                        <div class="list-stats__item">
+                            <img src="/img/main-1920/header-stats.svg" alt="">
+                        </div>
+                        <div class="list-stats__item">
+                            <img src="/img/main-1920/header-search.svg" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="katalog-auto__list">
+                    <div class="katalog-auto__list-marks">
+                        <div class="">
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/kia.png" alt=""> Kia
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/brilliance.png" alt=""> Brilliance
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/citroen.png" alt=""> Citroen
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/ford.png" alt=""> Ford
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/haima.png" alt=""> Haima
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/lifan.png" alt=""> Lifan
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/peugeot.png" alt=""> Peugeot
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/uaz.png" alt=""> UAZ
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/hyundai.png" alt=""> Hyundai
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/changan.png" alt=""> Changan
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/datsun.png" alt=""> Datsun
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/foton.png" alt=""> Foton
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/haval.png" alt=""> Haval
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/mazda.png" alt=""> Mazda
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/ravon.png" alt=""> Ravon
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/zotye.png" alt=""> Zotye
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/skoda.png" alt=""> Skoda
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/chery.png" alt=""> Chery
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/dongfenf.png" alt=""> Dongfenf
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/gac.png" alt=""> GAC
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/honda.png" alt=""> Honda
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/mitsubishi.png" alt=""> Mitsubishi
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/chery.png" alt=""> Renault
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/volkswagen.png" alt=""> Volkswagen
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/cheryExeed.png" alt=""> CheryExeed
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/dwHover.png" alt=""> DW Hover
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/geely.png" alt=""> Geely
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/jac.png" alt=""> JAC
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/nissan.png" alt=""> Nissan
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/ssang.png" alt=""> Ssang
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/toyta.png" alt=""> Toyota
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/chevrolet.png" alt=""> Chevrolet
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/faw.png" alt=""> FAW
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/greatWall.png" alt=""> Great Wall
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/lada.png" alt=""> Lada
+                            </div>
+                            <div class="choose__marks-item">
+                                <img src="/img/main-1920-auto/opel.png" alt=""> Opel
+                            </div>
+                        </div>
+                    </div>
+                    <div class="katalog-auto__list-types">
+                        <div class="katalog-auto__list-types__item">
+                            <img src="/img/main-1920-auto/vnedor.png" alt="">
+                            <p>Внедорожник</p>
+                        </div>
+                        <div class="katalog-auto__list-types__item">
+                            <img src="/img/main-1920-auto/sedan.png" alt="">
+                            <p>Седан</p>
+                        </div>
+                        <div class="katalog-auto__list-types__item">
+                            <img src="/img/main-1920-auto/hatchback.png" alt="">
+                            <p>Хэтчбек</p>
+                        </div>
+                        <div class="katalog-auto__list-types__item">
+                            <img src="/img/main-1920-auto/liftback 1.png" alt="">
+                            <p>Лифтбек</p>
+                        </div>
+                        <div class="katalog-auto__list-types__item">
+                            <img src="/img/main-1920-auto/universal.png" alt="">
+                            <p>Универсал</p>
+                        </div>
+                        <div class="katalog-auto__list-types__item">
+                            <img src="/img/main-1920-auto/minivan.png" alt="">
+                            <p>Минивэн</p>
+                        </div>
+                        <div class="katalog-auto__list-types__item">
+                            <img src="/img/main-1920-auto/pickup.png" alt="">
+                            <p>Пикап</p>
+                        </div>
+                        <div class="katalog-auto__list-types__item">
+                            <img src="/img/main-1920-auto/hatchback (1).png" alt="">
+                            <p>Кроссовер</p>
+                        </div>
+                        <div class="katalog-auto__list-types__item">
+                            <img src="/img/main-1920-auto/furgon.png" alt="">
+                            <p>Фургон</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-kredit">
+                    <div class="kredit__list">
+                        <div class="header-kredit-item">
+                            <div class="">
+                                <p class="special__cards-item__title">Первый автомобиль</p>
+                                <p class="special__cards-item__subtitle">1,9% по льготной ставке</p>
+                            </div>
+                            <button class="special__cards-item__btn">Узнать больше</button>
+                        </div>
+                        <div class="header-kredit-item">
+                            <div class="">
+                                <p class="special__cards-item__title">Семейный автомобиль</p>
+                                <p class="special__cards-item__subtitle">1,9% по льготной ставке</p>
+                            </div>
+                            <button class="special__cards-item__btn">Узнать больше</button>
+                        </div>
+                        <div class="header-kredit-item">
+                            <div class="">
+                                <p class="special__cards-item__title">Экспресс-кредит</p>
+                                <p class="special__cards-item__subtitle">1,9% по льготной ставке</p>
+                            </div>
+                            <button class="special__cards-item__btn">Узнать больше</button>
+                        </div>
+                        <div class="header-kredit-item">
+                            <div class="">
+                                <p class="special__cards-item__title">Работникам медицины</p>
+                                <p class="special__cards-item__subtitle">1,9% по льготной ставке</p>
+                            </div>
+                            <button class="special__cards-item__btn">Узнать больше</button>
+                        </div>
+                        <div class="header-kredit-item">
+                            <div class="">
+                                <p class="special__cards-item__title">Рассрочка</p>
+                                <p class="special__cards-item__subtitle">1,9% по льготной ставке</p>
+                            </div>
+                            <button class="special__cards-item__btn">Узнать больше</button>
+                        </div>
+                        <div class="header-kredit-item">
+                            <div class="">
+                                <p class="special__cards-item__title">Госпрограмма Trade-in</p>
+                                <p class="special__cards-item__subtitle">1,9% по льготной ставке</p>
+                            </div>
+                            <button class="special__cards-item__btn">Узнать больше</button>
+                        </div>
+                </div>
+                </div>
+                <div class="header-spec">
+                    <div class="header-spec-cont">
+                        <div class="special__cards-item spec-util">
+                            <div class="">
+                                <p class="special__cards-item__title">Утилизация</p>
+                                <p class="special__cards-item__subtitle">1,9% по льготной ставке</p>
+                            </div>
+                            <button class="special__cards-item__btn">Узнать больше</button>
+                        </div>
+                        <div class="special__cards-item spec-tradeIn">
+                            <div class="">
+                                <p class="special__cards-item__title">Trade-in</p>
+                                <p class="special__cards-item__subtitle">1,9% по льготной ставке</p>
+                            </div>
+                            <button class="special__cards-item__btn">Узнать больше</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="burger">
+                    <div class="burger-search">
+                        <div class="burger-search__img">
+                            <img src="img/main-1920/header-search.svg" alt="">
+                            <input type="text" placeholder="Поиск" class="burger-search__input" style="border: none;">
+                        </div>
+                        <button class="burger-search__btn red-btn">
+                            найти
+                        </button>
+                    </div>
+                    <div class="burger-list">
+                        <div class="burger-list__left">
+                            <div class="burger-list__item">
+                                <a href="">
+                                    <p class="burger-list__item-title">
+                                        Кредит и рассрочка
+                                    </p>
+                                </a>
+                                <a href="">
+                                    <p class="burger-list__item-link">
+                                        Первый автомобиль
+                                    </p>
+                                </a>
+                                <a href="">
+                                    <p class="burger-list__item-link">
+                                        Семейный автомобиль
+                                    </p>
+                                </a>
+                                <a href="">
+                                    <p class="burger-list__item-link">
+                                        Экспресс-кредит
+                                    </p>
+                                </a>
+                                <a href="">
+                                    <p class="burger-list__item-link">
+                                        Работникам медицины
+                                    </p>
+                                </a>
+                                <a href="">
+                                    <p class="burger-list__item-link">
+                                        Рассрочка
+                                    </p>
+                                </a>
+                                <a href="">
+                                    <p class="burger-list__item-link">
+                                        Госпрограмма Trade-In
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="burger-list__item">
+                                <a href="">
+                                    <p class="burger-list__item-title">
+                                        Спецпредложения
+                                    </p>
+                                </a>
+                                <a href="">
+                                    <p class="burger-list__item-link">
+                                        Trade-In
+                                    </p>
+                                </a>
+                                <a href="">
+                                    <p class="burger-list__item-link">
+                                        Рассрочка
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="burger-list__item">
+                                <a href="">
+                                    <p class="burger-list__item-title">
+                                        Такси в кредит
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="burger-list__center">
+                            <div class="burger-list__item">
+                                <a href="">
+                                    <p class="burger-list__item-title">
+                                        Каталог автомобилей
+                                    </p>
+                                </a>
+                                <div class="burger-list__item-cars">
+                                    <div class="">
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Kia
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Hyundai
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Skoda
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Volkswagen
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Toyota
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Brilliance
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Changan
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Chery
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                CheryExceed
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Chevrolet
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Citroen
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="">
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Datsun
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Dongfeng
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                DW Hover
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                FAW
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Ford
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Foton
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Geely
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Great Wall
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Haima
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Haval
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Honda
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="">
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                JAC
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Lada
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Lifan
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Mazda
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Mitsubishi
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Nissan
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Opel
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Peugeot
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Ravon
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Renault
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                SsangYong
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="">
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Suzuki
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                UAZ
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Zotye
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="burger-list__right">
+                            <div class="burger-list__item">
+                                <a href="">
+                                    <p class="burger-list__item-title">
+                                        Авто с пробегом
+                                    </p>
+                                </a>
+                                <div class="burger-list__item-cars">
+                                    <div class="">
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Audi
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                BMW
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Brilliance
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Changan
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Chery
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Chevrolet
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Citroen
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Daewoo
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Datsun
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Dongfeng
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                FAW
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="">
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Ford
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Geely
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Genesis
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Great Wall
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Haval
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Honda
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Hyundai
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Jeep
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Kia
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Lada
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Land Rover
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="">
+                                        <a href="">
+                                        <p class="burger-list__item-link">
+                                            Lexus
+                                        </p>
+                                    </a>
+                                    <a href="">
+                                        <p class="burger-list__item-link">
+                                            Lifan
+                                        </p>
+                                    </a>
+                                    <a href="">
+                                        <p class="burger-list__item-link">
+                                            Mazda
+                                        </p>
+                                    </a>
+                                    <a href="">
+                                        <p class="burger-list__item-link">
+                                            Mersedes-Benz
+                                        </p>
+                                    </a>
+                                    <a href="">
+                                        <p class="burger-list__item-link">
+                                            Mitsubishi
+                                        </p>
+                                    </a>
+                                    <a href="">
+                                        <p class="burger-list__item-link">
+                                            Nissan
+                                        </p>
+                                    </a>
+                                    <a href="">
+                                        <p class="burger-list__item-link">
+                                            Opel
+                                        </p>
+                                    </a>
+                                    <a href="">
+                                        <p class="burger-list__item-link">
+                                            Peugeot
+                                        </p>
+                                    </a>
+                                    <a href="">
+                                        <p class="burger-list__item-link">
+                                            Ravon
+                                        </p>
+                                    </a>
+                                    <a href="">
+                                        <p class="burger-list__item-link">
+                                            Renault
+                                        </p>
+                                    </a>
+                                    <a href="">
+                                        <p class="burger-list__item-link">
+                                            Skoda
+                                        </p>
+                                    </a>
+                                    </div>
+                                    <div class="">
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                SsangYong
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Suzuki
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Toyota
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Volkswagen
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Volvo
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Vortex
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                Zotye
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                ЗАЗ
+                                            </p>
+                                        </a>
+                                        <a href="">
+                                            <p class="burger-list__item-link">
+                                                ТаГАЗ
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <p class="backlink-p">
+                <a href="../index.html" class="back-link">Главная / </a>
+                Авто с пробегом
+            </p>
+            <h1 class="page__title">
+                Авто с пробегом
+            </h1>
+        </div>
+        <section class="choose container">
+            <div class="choose__marks">
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/kia.png" alt=""> Kia
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/brilliance.png" alt=""> Brilliance
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/citroen.png" alt=""> Citroen
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/ford.png" alt=""> Ford
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/haima.png" alt=""> Haima
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/lifan.png" alt=""> Lifan
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/peugeot.png" alt=""> Peugeot
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/uaz.png" alt=""> UAZ
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/hyundai.png" alt=""> Hyundai
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/changan.png" alt=""> Changan
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/datsun.png" alt=""> Datsun
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/foton.png" alt=""> Foton
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/haval.png" alt=""> Haval
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/mazda.png" alt=""> Mazda
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/ravon.png" alt=""> Ravon
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/zotye.png" alt=""> Zotye
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/skoda.png" alt=""> Skoda
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/chery.png" alt=""> Chery
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/dongfenf.png" alt=""> Dongfenf
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/gac.png" alt=""> GAC
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/honda.png" alt=""> Honda
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/mitsubishi.png" alt=""> Mitsubishi
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/renault.png" alt=""> Renault
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/volkswagen.png" alt=""> Volkswagen
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/cheryExeed.png" alt=""> CheryExeed
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/dwHover.png" alt=""> DW Hover
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/geely.png" alt=""> Geely
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/jac.png" alt=""> JAC
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/nissan.png" alt=""> Nissan
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/ssang.png" alt=""> Ssang
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/toyta.png" alt=""> Toyota
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/chevrolet.png" alt=""> Chevrolet
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/faw.png" alt=""> FAW
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/greatWall.png" alt=""> Great Wall
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/lada.png" alt=""> Lada
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/opel.png" alt=""> Opel
+                </div>
+                <div class="choose__marks-item">
+                    <img src="/img/main-1920-auto/suzuki.png" alt=""> Suzuki
+                </div>
+            </div>
+            <div class="choose__params">
+                <p class="choose__params-title">
+                    Быстрый подбор авто
+                </p>
+                <div class="choose__params-price">
+                    <div class="choose__params-price__top">
+                        <p>Цена</p>
+                        <span>0-500т</span>
+                    </div>
+                    <input type="range" step="100" min="0" max="1000" class="choose__params-price__input">
+                    <div class="choose__params-price__steps">
+                        <p class="choose__params-price__step">
+                            <img src="/img/range-line.png" alt="">
+                            0
+                        </p>
+                        <p class="choose__params-price__step">
+                            <img src="/img/range-line.png" alt="">
+                            500т
+                        </p>
+                        <p class="choose__params-price__step">
+                            <img src="/img/range-line.png" alt="">
+                            800т
+                        </p>
+                        <p class="choose__params-price__step">
+                            <img src="/img/range-line.png" alt="">
+                            1.1м
+                        </p>
+                        <p class="choose__params-price__step">
+                            <img src="/img/range-line.png" alt="">
+                            1.4м
+                        </p>
+                        <p class="choose__params-price__step">
+                            <img src="/img/range-line.png" alt="">
+                            1.7м
+                        </p>
+                        <p class="choose__params-price__step">
+                            <img src="/img/range-line.png" alt="">
+                            2м
+                        </p>
+                        <p class="choose__params-price__step">
+                            <img src="/img/range-line.png" alt="">
+                            2.3м
+                        </p>
+                        <p class="choose__params-price__step">
+                            <img src="/img/range-line.png" alt="">
+                            2.7м
+                        </p>
+                        <p class="choose__params-price__step">
+                            <img src="/img/range-line.png" alt="">
+                            3м
+                        </p>
+                    </div>
+                </div>
+                <div class="choose__params-choice">
+                    <select name="" id="" class="params-choice__select">
+                        <option value="">Модель</option>
+                        <option value="">Седан</option>
+                        <option value="">Пикап</option>
+                        <option value="">Внедорожник</option>
+                        <option value="">Хетчбэк</option>
+                    </select>
+                    <select name="" id="" class="params-choice__select">
+                        <option value="">Год выпуска</option>
+                        <option value="">Седан</option>
+                        <option value="">Пикап</option>
+                        <option value="">Внедорожник</option>
+                        <option value="">Хетчбэк</option>
+                    </select>
+                    <select name="" id="" class="params-choice__select">
+                        <option value="">Тип кузова</option>
+                        <option value="">Седан</option>
+                        <option value="">Пикап</option>
+                        <option value="">Внедорожник</option>
+                        <option value="">Хетчбэк</option>
+                    </select>
+                    <select name="" id="" class="params-choice__select">
+                        <option value="">Коробка</option>
+                        <option value="">Автоматическая</option>
+                        <option value="">Механическая</option>
+                    </select>
+                </div>
+                <button class="choose__params-btn red-btn">ПОКАЗАТЬ 73</button>
+            </div>
+        </section>
+        <section class="probeg">
+            <div class="container">
+                <div class="probeg__cards">
+                    <a href="auto-probeg-page.html">
+                        <div class="probeg__cards-item">
+                            <div class="probeg__cards-item__top">
+                                <img src="../img/auto-probeg-1920/camry.png" alt="">
+                                <div class="slider-photos">
+                                    <div class="slide"></div>
+                                    <div class="slide"></div>
+                                    <div class="slide"></div>
+                                    <div class="slide"></div>
+                                </div>
+                            </div>
+                           <div class="probeg__cards-item__content">
+                            <p class="probeg__cards-item__title">
+                                Toyota Camry 2013
+                            </p>
+                            <div class="probeg__cards-item__params">
+                                <div class="">
+                                    <p class="probeg__cards-item__params-item">
+                                        Мощность:
+                                        <span>115 л.с.</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        Объем двигателя:
+                                        <span>1.2 л.</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        Привод:
+                                        <span>передний</span>
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <p class="probeg__cards-item__params-item">
+                                        Кузов:
+                                        <span>внедорожник</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        КПП:
+                                        <span>механика</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        Пробег:
+                                        <span>123456 км.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="probeg__cards-item__price">
+                                <p>от 1 615 000 ₽ </p>
+                                <span>от 115 000 ₽/мес. </span>
+                            </div>
+                            <div class="auto__card-btns">
+                                <button class="auto__card-btns__btn">
+                                    Резерв онлайн
+                                </button>
+                                <button class="auto__card-btns__btn">
+                                    Купить
+                                </button>
+                                <button class="auto__card-btns__btn">
+                                    Подробнее
+                                </button>
+                            </div>
+                           </div>
+                        </div>
+                    </a>
+                    <a href="auto-probeg-page.html">
+                        <div class="probeg__cards-item">
+                            <div class="probeg__cards-item__top">
+                                <img src="../img/auto-probeg-1920/camry.png" alt="">
+                                <div class="slider-photos">
+                                    <div class="slide"></div>
+                                    <div class="slide"></div>
+                                    <div class="slide"></div>
+                                    <div class="slide"></div>
+                                </div>
+                            </div>
+                           <div class="probeg__cards-item__content">
+                            <p class="probeg__cards-item__title">
+                                Toyota Camry 2013
+                            </p>
+                            <div class="probeg__cards-item__params">
+                                <div class="">
+                                    <p class="probeg__cards-item__params-item">
+                                        Мощность:
+                                        <span>115 л.с.</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        Объем двигателя:
+                                        <span>1.2 л.</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        Привод:
+                                        <span>передний</span>
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <p class="probeg__cards-item__params-item">
+                                        Кузов:
+                                        <span>внедорожник</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        КПП:
+                                        <span>механика</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        Пробег:
+                                        <span>123456 км.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="probeg__cards-item__price">
+                                <p>от 1 615 000 ₽ </p>
+                                <span>от 115 000 ₽/мес. </span>
+                            </div>
+                            <div class="auto__card-btns">
+                                <button class="auto__card-btns__btn">
+                                    Резерв онлайн
+                                </button>
+                                <button class="auto__card-btns__btn">
+                                    Купить
+                                </button>
+                                <button class="auto__card-btns__btn">
+                                    Подробнее
+                                </button>
+                            </div>
+                           </div>
+                        </div>
+                    </a>
+                    <a href="auto-probeg-page.html">
+                        <div class="probeg__cards-item">
+                            <div class="probeg__cards-item__top">
+                                <img src="../img/auto-probeg-1920/camry.png" alt="">
+                                <div class="slider-photos">
+                                    <div class="slide"></div>
+                                    <div class="slide"></div>
+                                    <div class="slide"></div>
+                                    <div class="slide"></div>
+                                </div>
+                            </div>
+                           <div class="probeg__cards-item__content">
+                            <p class="probeg__cards-item__title">
+                                Toyota Camry 2013
+                            </p>
+                            <div class="probeg__cards-item__params">
+                                <div class="">
+                                    <p class="probeg__cards-item__params-item">
+                                        Мощность:
+                                        <span>115 л.с.</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        Объем двигателя:
+                                        <span>1.2 л.</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        Привод:
+                                        <span>передний</span>
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <p class="probeg__cards-item__params-item">
+                                        Кузов:
+                                        <span>внедорожник</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        КПП:
+                                        <span>механика</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        Пробег:
+                                        <span>123456 км.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="probeg__cards-item__price">
+                                <p>от 1 615 000 ₽ </p>
+                                <span>от 115 000 ₽/мес. </span>
+                            </div>
+                            <div class="auto__card-btns">
+                                <button class="auto__card-btns__btn">
+                                    Резерв онлайн
+                                </button>
+                                <button class="auto__card-btns__btn">
+                                    Купить
+                                </button>
+                                <button class="auto__card-btns__btn">
+                                    Подробнее
+                                </button>
+                            </div>
+                           </div>
+                        </div>
+                    </a>
+                    <a href="auto-probeg-page.html">
+                        <div class="probeg__cards-item">
+                            <div class="probeg__cards-item__top">
+                                <img src="../img/auto-probeg-1920/camry.png" alt="">
+                                <div class="slider-photos">
+                                    <div class="slide"></div>
+                                    <div class="slide"></div>
+                                    <div class="slide"></div>
+                                    <div class="slide"></div>
+                                </div>
+                            </div>
+                           <div class="probeg__cards-item__content">
+                            <p class="probeg__cards-item__title">
+                                Toyota Camry 2013
+                            </p>
+                            <div class="probeg__cards-item__params">
+                                <div class="">
+                                    <p class="probeg__cards-item__params-item">
+                                        Мощность:
+                                        <span>115 л.с.</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        Объем двигателя:
+                                        <span>1.2 л.</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        Привод:
+                                        <span>передний</span>
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <p class="probeg__cards-item__params-item">
+                                        Кузов:
+                                        <span>внедорожник</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        КПП:
+                                        <span>механика</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        Пробег:
+                                        <span>123456 км.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="probeg__cards-item__price">
+                                <p>от 1 615 000 ₽ </p>
+                                <span>от 115 000 ₽/мес. </span>
+                            </div>
+                            <div class="auto__card-btns">
+                                <button class="auto__card-btns__btn">
+                                    Резерв онлайн
+                                </button>
+                                <button class="auto__card-btns__btn">
+                                    Купить
+                                </button>
+                                <button class="auto__card-btns__btn">
+                                    Подробнее
+                                </button>
+                            </div>
+                           </div>
+                        </div>
+                    </a>
+                    <a href="auto-probeg-page.html">
+                        <div class="probeg__cards-item">
+                            <div class="probeg__cards-item__top">
+                                <img src="../img/auto-probeg-1920/camry.png" alt="">
+                                <div class="slider-photos">
+                                    <div class="slide"></div>
+                                    <div class="slide"></div>
+                                    <div class="slide"></div>
+                                    <div class="slide"></div>
+                                </div>
+                            </div>
+                           <div class="probeg__cards-item__content">
+                            <p class="probeg__cards-item__title">
+                                Toyota Camry 2013
+                            </p>
+                            <div class="probeg__cards-item__params">
+                                <div class="">
+                                    <p class="probeg__cards-item__params-item">
+                                        Мощность:
+                                        <span>115 л.с.</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        Объем двигателя:
+                                        <span>1.2 л.</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        Привод:
+                                        <span>передний</span>
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <p class="probeg__cards-item__params-item">
+                                        Кузов:
+                                        <span>внедорожник</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        КПП:
+                                        <span>механика</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        Пробег:
+                                        <span>123456 км.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="probeg__cards-item__price">
+                                <p>от 1 615 000 ₽ </p>
+                                <span>от 115 000 ₽/мес. </span>
+                            </div>
+                            <div class="auto__card-btns">
+                                <button class="auto__card-btns__btn">
+                                    Резерв онлайн
+                                </button>
+                                <button class="auto__card-btns__btn">
+                                    Купить
+                                </button>
+                                <button class="auto__card-btns__btn">
+                                    Подробнее
+                                </button>
+                            </div>
+                           </div>
+                        </div>
+                    </a>
+                    <a href="auto-probeg-page.html">
+                        <div class="probeg__cards-item">
+                            <div class="probeg__cards-item__top">
+                                <img src="../img/auto-probeg-1920/camry.png" alt="">
+                                <div class="slider-photos">
+                                    <div class="slide"></div>
+                                    <div class="slide"></div>
+                                    <div class="slide"></div>
+                                    <div class="slide"></div>
+                                </div>
+                            </div>
+                           <div class="probeg__cards-item__content">
+                            <p class="probeg__cards-item__title">
+                                Toyota Camry 2013
+                            </p>
+                            <div class="probeg__cards-item__params">
+                                <div class="">
+                                    <p class="probeg__cards-item__params-item">
+                                        Мощность:
+                                        <span>115 л.с.</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        Объем двигателя:
+                                        <span>1.2 л.</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        Привод:
+                                        <span>передний</span>
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <p class="probeg__cards-item__params-item">
+                                        Кузов:
+                                        <span>внедорожник</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        КПП:
+                                        <span>механика</span>
+                                    </p>
+                                    <p class="probeg__cards-item__params-item">
+                                        Пробег:
+                                        <span>123456 км.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="probeg__cards-item__price">
+                                <p>от 1 615 000 ₽ </p>
+                                <span>от 115 000 ₽/мес. </span>
+                            </div>
+                            <div class="auto__card-btns">
+                                <button class="auto__card-btns__btn">
+                                    Резерв онлайн
+                                </button>
+                                <button class="auto__card-btns__btn">
+                                    Купить
+                                </button>
+                                <button class="auto__card-btns__btn">
+                                    Подробнее
+                                </button>
+                            </div>
+                           </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="probeg__btn-cont">
+                    <button class="probeg__more red-btn">
+                        показать ещё
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="blog">
+            <div class="container">
+                <div class="blog__top">
+                    <div class="blog__top-left">
+                        <h2 class="sec-title">
+                            Блог
+                        </h2>
+                        <button class="blog__top-left__btn"><a href="">
+                            Все статьи
+                        </a></button>
+                    </div>
+                    <div class="">
+                        <button class="slider-btn">
+                            <img src="/img/slider-left-arrow.svg" alt="">
+                        </button>
+                        <button class="slider-btn">
+                            <img src="/img/slider-right-arrow.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="blog__list">
+                    <div class="blog__list-item">
+                        <img src="/img/main-1920/blog-img.png" alt="">
+                        <p class="blog__list-item__date">25 октября</p>
+                        <p class="blog__list-item__title">
+                            Тест Skoda Karoq Scout - городской карлик или настоящий скаут
+                        </p>
+                    </div>
+                    <div class="blog__list-item">
+                        <img src="/img/main-1920/blog-img.png" alt="">
+                        <p class="blog__list-item__date">25 октября</p>
+                        <p class="blog__list-item__title">
+                            Тест Skoda Karoq Scout - городской карлик или настоящий скаут
+                        </p>
+                    </div>
+                    <div class="blog__list-item">
+                        <img src="/img/main-1920/blog-img.png" alt="">
+                        <p class="blog__list-item__date">25 октября</p>
+                        <p class="blog__list-item__title">
+                            Тест Skoda Karoq Scout - городской карлик или настоящий скаут
+                        </p>
+                    </div>
+                    <div class="blog__list-item">
+                        <img src="/img/main-1920/blog-img.png" alt="">
+                        <p class="blog__list-item__date">25 октября</p>
+                        <p class="blog__list-item__title">
+                            Тест Skoda Karoq Scout - городской карлик или настоящий скаут
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="margin-bottom: 90px;">
+           <div class="container">
+            <h3 class="title" style="margin-bottom: 30px;">
+                Заголовок
+            </h3>
+            <p class="desc" style="margin-bottom: 25px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga excepturi molestias iusto eaque aperiam quae exercitationem odio vel doloremque. Voluptatum hic harum sed blanditiis rem similique unde laboriosam dolor nulla?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id suscipit illo enim ipsum, quae rerum nihil minus porro repudiandae vitae sit libero ratione voluptatibus placeat perferendis quia laborum doloribus numquam.
+            </p>
+            <h4 class="subtitle" style="margin-bottom: 20px;">
+                Подзаголовок
+            </h4>
+            <p class="desc" style="margin-bottom: 25px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga excepturi molestias iusto eaque aperiam quae exercitationem odio vel doloremque. Voluptatum hic harum sed blanditiis rem similique unde laboriosam dolor nulla?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id suscipit illo enim ipsum, quae rerum nihil minus porro repudiandae vitae sit libero ratione voluptatibus placeat perferendis quia laborum doloribus numquam.
+            </p>
+            <h4 class="subtitle" style="margin-bottom: 20px;">
+                Подзаголовок
+            </h4>
+            <p class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga excepturi molestias iusto eaque aperiam quae exercitationem odio vel doloremque. Voluptatum hic harum sed blanditiis rem similique unde laboriosam dolor nulla?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id suscipit illo enim ipsum, quae rerum nihil minus porro repudiandae vitae sit libero ratione voluptatibus placeat perferendis quia laborum doloribus numquam.
+            </p>
+           </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <!-- <div class="map"></div> -->
+            <div class="footer__nav">
+                <a href="">
+                    <p class="footer__nav-item">
+                        Каталог авто
+                    </p>
+                </a>
+                <a href="">
+                    <p class="footer__nav-item">
+                        Авто с пробегом
+                    </p>
+                </a>
+                <a href="">
+                    <p class="footer__nav-item">
+                        Кредит и рассрочка
+                    </p>
+                </a>
+                <a href="">
+                    <p class="footer__nav-item">
+                        Спецпредложения
+                    </p>
+                </a>
+                <a href="">
+                    <p class="footer__nav-item">
+                        Такси в кредит
+                    </p>
+                </a>
+            </div>
+            <div class="footer__main">
+                <div class="footer__main-left">
+                    <div class="footer__main-left__top">
+                        <div class="footer__main-left__top-title">
+                            <div class="footer__title">
+                                каталог авто
+                            </div>
+                            <a href="" class="footer__main-left__top-title__map">
+                                Подробнее
+                            </a>
+                        </div>
+                        <a href="" class="footer__main-left__top-map">
+                            Карта сайта
+                        </a>
+                    </div>
+                    <div class="footer__cars">
+                        <div class="footer__cars-div">
+                            <a href="" class="footer__main-left__item">
+                                Kia
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Hyundai
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Skoda
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Volkswagen
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Toyota
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Brilliance
+                            </a>
+                        </div>
+                        <div class="footer__cars-div">
+                            <a href="" class="footer__main-left__item">
+                                Changan
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Chery
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                CheryExceed
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Chevrolet
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Citroen
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Datsun
+                            </a>
+                        </div>
+                        <div class="footer__cars-div">
+                            <a href="" class="footer__main-left__item">
+                                Dongfeng
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                DW Hover
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                FAW
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Ford
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Foton
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Geely
+                            </a>
+                        </div>
+                        <div class="footer__cars-div">
+                            <a href="" class="footer__main-left__item">
+                                Great Wall
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Haima
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Haval
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Honda
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                JAC
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Lada
+                            </a>
+                        </div>
+                        <div class="footer__cars-div">
+                            <a href="" class="footer__main-left__item">
+                                Lifan
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Mazda
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Mitsubishi
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Nissan
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Opel
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Peugeot
+                            </a>
+                        </div>
+                        <div class="footer__cars-div">
+                            <a href="" class="footer__main-left__item">
+                                Ravon
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Renault
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                SsangYong
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Suzuki
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                UAZ
+                            </a>
+                            <a href="" class="footer__main-left__item">
+                                Zotye
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__main-center">
+                    <div class="footer__title">
+                        Кредит и рассрочка
+                    </div>
+                    <div class="footer__main-center__list">
+                        <a href="" class="footer__main-center__item">
+                            Семейный автомобиль
+                        </a>
+                        <a href="" class="footer__main-center__item">
+                            Первый автомобиль
+                        </a>
+                        <a href="" class="footer__main-center__item">
+                            Работникам медицины
+                        </a>
+                        <a href="" class="footer__main-center__item">
+                            Рассрочка
+                        </a>
+                        <a href="" class="footer__main-center__item">
+                            Трейд-in
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__main-right">
+                    <div class="footer__title">
+                        Контакты
+                    </div>
+                    <div class="footer__main-right__item">
+                        <img src="img/strahovanie-1920/footer-call.png" alt="">
+                        <div class="">
+                            <p class="footer__main-right__item-info">
+                                +7 (800) 551-94-31
+                            </p>
+                            <p class="footer__main-right__item-info">
+                                +7 (495) 292-18-67
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer__main-right__item">
+                        <img src="img/strahovanie-1920/footer-time.png" alt="">
+                        <p class="footer__main-right__item-info">
+                            Ежедневно с 08:00 до 21:00
+                        </p>
+                    </div>
+                    <div class="footer__main-right__item">
+                        <img src="img/strahovanie-1920/footer-gps.png" alt="">
+                        <p class="footer__main-right__item-info">
+                            Россия, Москва, 38КМ МКАД, 6Бс1 <br>
+                            <span>Схема проезда</span>
+                        </p>
+                    </div>
+                    <select name="" id="" class="footer__main-right__select">
+                        <option value="">Москва</option>
+                    </select>
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer__bottom">
+            <div class="container footer__bottom-cont">
+                <div class="footer__bottom-left">
+                    <p class="footer__bottom-left__copy">
+                        © 2021 Автосалон "ABC AUTO". Официальный дилер
+                    </p>
+                    <div class="footer__bottom-left__links">
+                        <a href="" class="footer__bottom-left__links-item">Политика конфиденциальности</a>
+                        <a href="" class="footer__bottom-left__links-item">Пользовательское соглашение</a>
+                    </div>
+                </div>
+                <p class="footer__bottom-center">
+                    Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса Российской Федерации.
+                </p>
+                <img src="img/strahovanie-1920/footer-rate.png" alt="" class="footer__bottom-right">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
